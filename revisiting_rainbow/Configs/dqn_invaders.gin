@@ -5,7 +5,7 @@ import dopamine.jax.agents.dqn.dqn_agent
 import dopamine.replay_memory.prioritized_replay_buffer
 
 import networks_new
-import dqn_agent_new
+import Agents.dqn_agent_new
 import minatar_env
 import external_configurations
 
@@ -48,7 +48,7 @@ create_optimizer.eps = 3.125e-4
 create_minatar_env.game_name  = 'space_invaders'
 TrainRunner.create_environment_fn =  @minatar_env.create_minatar_env
 
-Runner.num_iterations = 10
+Runner.num_iterations = 20
 Runner.training_steps = 1000000
 Runner.max_steps_per_episode = 100000000
 

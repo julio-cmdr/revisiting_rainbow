@@ -5,7 +5,7 @@ import dopamine.jax.agents.dqn.dqn_agent
 import dopamine.replay_memory.prioritized_replay_buffer
 
 import networks_new
-import dqn_agent_new
+import Agents.dqn_agent_new
 import external_configurations
 
 JaxDQNAgent.observation_shape = %gym_lib.MOUNTAINCAR_OBSERVATION_SHAPE
