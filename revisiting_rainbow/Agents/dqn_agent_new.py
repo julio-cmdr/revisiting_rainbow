@@ -351,7 +351,8 @@ class JaxDQNAgentNew(dqn_agent.JaxDQNAgent):
                         action,
                         reward,
                         is_terminal,
-                        priority=None):
+                        priority=None,
+                        episode_end=False):
     """Stores a transition when in training mode.
     Stores the following tuple in the replay buffer (last_observation, action,
     reward, is_terminal, priority).
